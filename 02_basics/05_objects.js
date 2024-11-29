@@ -26,13 +26,21 @@ let arr = [
   {
     name: "vikash",
     age: 21,
+    cities: [
+      "delhi",
+      "mumbai",
+      "chandigarh",
+      {
+        country: "USA   ",
+        city: "Jaipur",
+      },
+    ],
   },
 ];
-const var1 = arr[2];
+console.log(arr[2].cities[3].country);
 
-let var2 = {
-  name: "vikash",
-  age: 21,
-};
-console.log(arr);
-console.log(var2);
+// let var2 = {
+//   name: "vikash",
+//   age: 21,
+// };
+// console.log(var2);
