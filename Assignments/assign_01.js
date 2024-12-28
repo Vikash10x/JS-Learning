@@ -20,7 +20,7 @@ function add(a, b) {
 
 // console.log(add(4, 5));
 console.log(add("4", 5));
-console.log(add(4, "5")); // string or number ko add ksrte ha to + aate he dono string ke rop ma work karegi
+console.log(add(4, "5")); // string or number ko add karte ha to + aate he dono string ke rop ma work karegi
 // console.log(add(4, "5"));
 // console.log(add("five ", "5"));
 
