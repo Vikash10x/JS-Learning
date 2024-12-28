@@ -10,8 +10,8 @@ function sum(n) {
   return ans;
 }
 
-// let ans = sum(10000);
-// console.log(ans);
+let ans = sum(10000);
+console.log(ans);
 
 // Synchronous Code ---------------
 
