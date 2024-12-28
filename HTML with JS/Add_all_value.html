@@ -48,9 +48,13 @@
 
         // Render all todos
         function render() {
+            console.log(todos);
+
             document.querySelector("#todos").innerHTML = "";
             for (let i = 0; i < todos.length; i++) {
                 const element = createTodoComponent(todos[i], i);
+                console.log(element);
+
                 document.querySelector("#todos").appendChild(element);
             }
         }
