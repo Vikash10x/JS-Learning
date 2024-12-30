@@ -27,5 +27,3 @@ app.get("/ride1", function (req, res) {
 });
 
 app.listen(3004);
-
-// google search http://localhost:3004
