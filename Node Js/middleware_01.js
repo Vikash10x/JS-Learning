@@ -6,15 +6,14 @@ let requestCount = 0;
 
 function requestIncreaser(req, res, next) {
   requestCount = requestCount + 1;
-  req.name = "kumawat123";
   console.log("Total number of request: " + requestCount);
-  console.log(req.name);
-  next();
+  res.json({
+    massage: "I ended the request early",
+  });
+  // next();
 }
 
 function realSumHandler(req, res) {
-  // requestIncreaser(req, res);
-
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
 
