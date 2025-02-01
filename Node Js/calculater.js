@@ -10,6 +10,7 @@ app.get("/add/:a/:b", function (req, res) {
     answer: a + b,
   });
 });
+
 app.get("/add", function (req, res) {
   const a = req.query.a;
   const b = req.query.b;
