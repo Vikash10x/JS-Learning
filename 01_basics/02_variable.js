@@ -20,4 +20,4 @@ let state;
 // symbol => unique
 
 // object
-console.log(typeof age);
+console.log(typeof name);

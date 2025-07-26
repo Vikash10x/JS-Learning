@@ -12,7 +12,7 @@ let userEmail;
 const id = Symbol("123");
 const anotherId = Symbol("123");
 
-// console.log(id === anotherId);
+console.log(id === anotherId);
 
 const bigNumber = 2545768976735526351n;
 
