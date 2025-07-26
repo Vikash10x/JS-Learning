@@ -6,13 +6,13 @@ const myHeros = ["dorimon", "nobita"];
 // console.log(myArr);
 
 const myArr2 = new Array(1, 2, 3, 4);
-// console.log(myArr.length);
+// console.log(myArr2);
 
 // Array methods --------------------------
 
-// myArr.push(6);
-// myArr.push(7);
-// myArr.pop();
+myArr.push(6);
+myArr.push(7);
+myArr.pop();
 
 // myArr.unshift(9); // Add value of starting
 // myArr.shift(); // remove starting value
