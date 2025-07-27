@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            i am a box
+        </div>
+    </div>
+    <script>
+        document.title = "hayy vikash"
+        console.log(document.title);
+        console.log(document.body);
+        document.body.style.backgroundColor = "green"
+
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redirect Example</title>
+</head>
+
+<body>
+
+    <h2>Enter a number:</h2>
+    <input type="number" id="numInput">
+    <button onclick="checkNumber()">Submit</button>
+
+    <script>
+        function checkNumber() {
+            let num = document.getElementById("numInput").value;
+
+            if (num > 4) {
+                // यूज़र को google.com पर redirect करें
+                window.location.href = "https://chatgpt.com/c/6860e966-158c-800f-b8f0-f4fa20b7e2d9";
+            } else {
+                alert("Number is not greater than 4");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

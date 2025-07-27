@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red orange">
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+
+        <script>
+            // let div = document.createElement("div");
+            // div.setAttribute("class", "attribute");
+            // div.innerHTML = "<b>hyy</b> i am web developer";
+            // document.querySelector(".container").append(div);
+
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("afterend", "I am under in the water, please Help me ")
+        </script>
+    </div>
+</body>
+
+</html>
