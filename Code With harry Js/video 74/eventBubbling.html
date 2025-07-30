@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .child {
+            background-color: white;
+            padding: 40px;
+            border: 2px solid black;
+            margin: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+        .contant {
+            background-color: black;
+            padding: 40px;
+            border: 2px solid black;
+            margin: 30px;
+            border-radius: 5px;
+
+        }
+
+        .container {
+            background-color: rgba(42, 165, 97, 0.425);
+            padding: 40px;
+            border: 2px solid black;
+            margin: 30px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="contant">
+            <div class="child">
+                I am child
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", () => {
+            // e.stopPropagation();
+            alert("Child was clicked")
+        })
+
+        document.querySelector(".contant").addEventListener("click", () => {
+            // e.stopPropagation();
+            alert("Contant was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", () => {
+            e.stopPropagation();
+            alert("Container was clicked")
+        })
+
+        function randdomColor() {
+            let r = Math.floor(Math.random() * 256)
+            let g = Math.floor(Math.random() * 256)
+            let b = Math.floor(Math.random() * 256)
+            return `rgb(${r},${g},${b})`;
+        }
+
+        let a = setInterval(() => {
+            document.querySelector(".child").style.color = randdomColor();
+            document.querySelector(".child").style.backgroundColor = randdomColor();
+            document.querySelector(".contant").style.backgroundColor = randdomColor();
+            document.querySelector(".container").style.backgroundColor = randdomColor();
+        }, 1000);
+        console.log(a);
+
+        // let a = setInterval(() => {
+        //     document.querySelector(".child").style.color = randdomColor();
+        //     document.querySelector(".child").style.backgroundColor = randdomColor();
+        //     document.querySelector(".contant").style.backgroundColor = randdomColor();
+        //     document.querySelector(".container").style.backgroundColor = randdomColor();
+        // }, 5000);
+        // console.log(a);
+
+    </script>
+</body>
+
+</html>
