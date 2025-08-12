@@ -1,4 +1,4 @@
-const express = require("express");
+// const express = require("express");
 const app = express();
 const port = 3000;
 
@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   let searchText = "Search Now";
   let obj = ["vikash", 55, 75];
   res.render("index", {
-    siteName: siteName, 
+    siteName: siteName,
     searchText: searchText,
     obj,
   });
