@@ -1,0 +1,11 @@
+nav ul {
+  background-color: rgb(204, 204, 203);
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 20px;
+}
+li {
+  list-style-type: none;
+  font-size: 19px;
+}
