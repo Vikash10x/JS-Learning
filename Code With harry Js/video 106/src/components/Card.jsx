@@ -7,6 +7,7 @@ export const Card = (props) => {
       <img src="src/img.jpeg" alt="" width={300} height={300} />
       <h3>{props.title}</h3>
       <h5>{props.description}</h5>
+      <p>{props.main}</p>
     </div>
   );
 };
