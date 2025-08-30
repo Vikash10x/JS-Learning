@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(149, 255, 149);
+  height: 350px;
+  max-width: 18vw;
+}
+
+nav,
+ul {
+  list-style: none;
+  display: flex;
+  background-color: beige;
+  padding: 10px 5px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
